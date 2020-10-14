@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.order.OrderDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:weightSum="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="M.R.P."
+                    android:layout_weight=".4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    android:paddingLeft="@dimen/_8sdp" />
+                <TextView
+                    android:id="@+id/txtMRP_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="261"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:layout_weight=".6"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:gravity="center_vertical|end"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Amount"
+                    android:layout_weight=".4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    android:paddingLeft="@dimen/_8sdp" />
+                <TextView
+                    android:id="@+id/txtDiscountAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:paddingStart="@dimen/_8sdp"
+                    android:layout_weight=".6"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:gravity="center_vertical|end"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Delivery charges"
+                    android:layout_weight=".4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    android:paddingLeft="@dimen/_8sdp" />
+                <TextView
+                    android:id="@+id/txtDeliveryCharges"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:paddingStart="@dimen/_8sdp"
+                    android:layout_weight=".6"
+                    android:textColor="@color/colorRed"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:gravity="center_vertical|end"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total"
+                    android:layout_weight=".4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    android:paddingLeft="@dimen/_8sdp" />
+                <TextView
+                    android:id="@+id/txtSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:paddingStart="@dimen/_8sdp"
+                    android:layout_weight=".6"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:gravity="center_vertical|end"
+                    android:textSize="@dimen/_13sdp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recycler_view_ordered_item"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Order's List Empty!"
+        android:fontFamily="@font/ubuntu_l"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+</RelativeLayout>

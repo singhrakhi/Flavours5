@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/_10sdp"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="+91-9354674477 "
+           android:drawableLeft="@drawable/ic_phone1"
+           android:textSize="@dimen/_11sdp"
+           android:drawablePadding="@dimen/_3sdp"
+           android:fontFamily="@font/ubuntu_l"
+           android:gravity="center_vertical"
+           android:textColor="@color/colorWhite"
+           android:id="@+id/mobile"
+           android:drawableStart="@drawable/ic_phone1" />
+
+       <TextView
+           android:paddingTop="@dimen/_3sdp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_location1"
+           android:ems="30"
+           android:drawablePadding="@dimen/_3sdp"
+           android:singleLine="true"
+           android:textSize="@dimen/_8sdp"
+           android:fontFamily="@font/ubuntu_l"
+           android:gravity="center_vertical"
+           android:textColor="@color/colorWhite"
+           android:id="@+id/delivery"
+           android:drawableStart="@drawable/ic_location1" />
+
+   </LinearLayout>
+
+
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/logo"/>
+
+
+
+
+</LinearLayout>

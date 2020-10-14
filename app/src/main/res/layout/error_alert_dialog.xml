@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:background="@drawable/shape_border_error">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:textSize="@dimen/_11sdp"
+        android:id="@+id/dialog_error_msg"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_r"
+        android:textColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="OK"
+        android:id="@+id/dialog_error_ok"
+        android:padding="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_m"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>

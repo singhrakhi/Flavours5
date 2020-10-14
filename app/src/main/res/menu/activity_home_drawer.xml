@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_book_grocer"
+            android:icon="@drawable/ic_truck"
+            android:title="Book Grocery Truck" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping"
+            android:title="My Cart" />
+
+
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/ic_location"
+            android:title="My Address" />
+
+        <item
+            android:id="@+id/nav_myorder"
+            android:icon="@drawable/menu_my_order_icon"
+            android:title="My Order" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:visible="false"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_offer"
+            android:visible="false"
+            android:icon="@drawable/menu_offer_zone_icon"
+            android:title="My Offer" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/menu_about_us_icon"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_customer_support"
+            android:icon="@drawable/menu_help_center_icon"
+            android:title="Customer Support" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_rate_review_24dp"
+            android:title="Rate us" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+
+    </group>
+</menu>

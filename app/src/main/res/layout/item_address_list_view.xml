@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white_greyish"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/manage_address_title"
+            android:drawableLeft="@drawable/ic_home"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="Home"
+            android:fontFamily="@font/ubuntu_r"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/manage_address_address"
+            android:text="B-91, Ground Floor, Near Noida Authority, Sector-6, Noida, Uttar Pradesh 201301"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/ubuntu_l"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_30sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:id="@+id/manage_address_txtEdit"
+                android:background="@drawable/shape_background_theme"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_8sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:id="@+id/manage_address_txtDelete"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:background="@drawable/shape_background_theme"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+</LinearLayout>

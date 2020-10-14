@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_18sdp"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center"
+    android:background="@drawable/shape_border_error">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/ubuntu_r"
+        android:gravity="center"
+        android:maxLength="4"
+        android:hint="@string/enter_otp"
+        android:inputType="number"
+        android:padding="@dimen/_9sdp"
+        android:textSize="@dimen/_12sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/submit_otp"
+        android:id="@+id/dialog_submit_otp"
+        android:padding="10dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_m"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_11sdp"
+        android:id="@+id/dialog_resend_btn"
+        android:gravity="center"
+        android:text="@string/resend_otp"
+        android:fontFamily="@font/ubuntu_b"
+        android:textColor="@color/colorBlack"/>
+
+
+</LinearLayout>

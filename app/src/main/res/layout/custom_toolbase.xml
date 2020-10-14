@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitleTextAppearance="@style/ToolbarSubtitleTheme"
+        app:titleTextAppearance="@style/ToolbarTitleTheme"
+        tools:layout_editor_absoluteX="-16dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        tools:layout_editor_absoluteY="-3dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imgBack" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu_r"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgCart"
+                android:id="@+id/imgSearch"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/imgCart" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shopping_cart"
+                android:id="@+id/imgCart"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_8sdp" />
+
+            <TextView
+                android:id="@+id/cart_badge"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/badge_back"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@+id/imgCart"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_8sdp"
+                android:layout_alignParentRight="true"
+                tools:ignore="UnknownId"
+                android:layout_toLeftOf="@+id/imgCart" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_8sdp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_border">
+
+    <EditText
+        android:id="@+id/edTxtOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_bg"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:hint="OTP"
+        android:fontFamily="@font/ubuntu_l"
+        android:inputType="number"
+        android:lines="1"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:maxLength="10"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/txt_Resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_r"
+        android:padding="@dimen/_8sdp"
+        android:text="Resend OTP"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/rectangle_orange_background"
+        android:fontFamily="@font/ubuntu_r"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp" />
+
+</LinearLayout>

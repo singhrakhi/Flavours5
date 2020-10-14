@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.prodcuts.ProdcutDetailsActivity">
+    <include layout="@layout/custom_toolbase"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="@dimen/_210sdp">
+                <ImageView
+                    android:id="@+id/img_product_image"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/_8sdp">
+                <TextView
+                    android:id="@+id/txtCashback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:background="@android:color/holo_green_dark"
+                    android:textSize="@dimen/_8sdp"/>
+
+                <TextView
+                    android:id="@+id/txtProdctName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight=".5">
+                        <TextView
+                            android:id="@+id/txtPayablePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13sdp"
+                           android:fontFamily="@font/ubuntu_r"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/txtOldPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:text="\u20B9 "
+                            android:fontFamily="@font/ubuntu_l"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_8sdp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight=".5">
+
+                        <LinearLayout
+                            android:id="@+id/layoutAddToCart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_27sdp"
+                            android:visibility="gone"
+                            tools:ignore="UselessParent">
+                            <TextView
+                                android:id="@+id/txtMinus"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="match_parent"
+                                android:text="-"
+                                android:fontFamily="@font/ubuntu_l"
+                                android:textColor="@color/colorWhite"
+                                android:gravity="center"
+                                android:background="@drawable/rectangle_orange_background"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:id="@+id/txtItemValue"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:text="1"
+                                android:fontFamily="@font/ubuntu_l"
+                                android:textColor="@color/colorBlack"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/txtPlus"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="match_parent"
+                                android:text="+"
+                                android:fontFamily="@font/ubuntu_l"
+                                android:background="@drawable/rectangle_orange_background"
+                                android:textColor="@color/colorWhite"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:background="@drawable/rectangle_orange_background"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Add"
+                            android:fontFamily="@font/ubuntu_r"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/txtAddToCart"/>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:text="Unit"/>
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:background="@drawable/bg_border"
+                    android:textColor="@color/colorOrange"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/_10sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="Description"
+                    android:fontFamily="@font/ubuntu_r"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/ubuntu_l"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

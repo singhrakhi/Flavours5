@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">5Flavours</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="rupees_symbol">\u20B9</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="not_a_member_yet_sign_up">Not a member yet? Sign up</string>
+    <string name="login_with_otp">Login with OTP</string>
+    <string name="signup">Signup</string>
+    <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="inbox">My Order</string>
+    <string name="account">Account</string>
+    <string name="action_settings">Search</string>
+    <string name="action_cart">My Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="error">There is some connectivity issue. Please try after sometimes. </string>
+    <string name="network_error">Please check your internet connection.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="submit_otp">Submit OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="add">Add</string>
+
+    <string name="about_us">
+
+        Email - info.5flavours@gmail.com
+        \nContact number: 9311680068
+		\n5FLAVOURS Team
+    </string>
+
+    <string-array name="state_list">
+        <item>Select State</item>
+        <item>Haryana</item>
+        <!--<item>Andaman and Nicobar Islands</item>-->
+        <!--<item>Andhra Pradesh</item>-->
+        <!--<item>Arunachal Pradesh</item>-->
+        <!--<item>Assam</item>-->
+        <!--<item>Bihar</item>-->
+        <!--<item>Chandigarh</item>-->
+        <!--<item>Chhattisgarh</item>-->
+        <!--<item>Dadra and Nagar Haveli</item>-->
+        <!--<item>Daman and Diu</item>-->
+        <!--<item>Delhi</item>-->
+        <!--<item>Goa</item>-->
+        <!--<item>Gujarat</item>-->
+        <!--<item>Himachal Pradesh</item>-->
+        <!--<item>Jammu and Kashmir</item>-->
+        <!--<item>Jharkhand</item>-->
+        <!--<item>Karnataka</item>-->
+        <!--<item>Kerala</item>-->
+        <!--<item>Lakshadweep</item>-->
+        <!--<item>Madhya Pradesh</item>-->
+        <!--<item>Maharashtra</item>-->
+        <!--<item>Manipur</item>-->
+        <!--<item>Meghalaya</item>-->
+        <!--<item>Mizoram</item>-->
+        <!--<item>Nagaland</item>-->
+        <!--<item>Orissa</item>-->
+        <!--<item>Pondicherry</item>-->
+        <!--<item>Punjab</item>-->
+        <!--<item>Rajasthan</item>-->
+        <!--<item>Sikkim</item>-->
+        <!--<item>Tamil Nadu</item>-->
+        <!--<item>Tripura</item>-->
+        <!--<item>Uttaranchal</item>-->
+        <!--<item>Uttar Pradesh</item>-->
+        <!--<item>West Bengal</item>-->
+    </string-array>
+
+
+    <string name="about1">
+        The 5 elements theory is used as the basis of the universe and describes the way everything interacts, including biological systems in the human body. The 5 elements are: Earth, Water, Fire, Air and Space. Our five major organs, namely heart, liver, spleen, lungs and kidney, correspond to these five elements. Each of these organs is also linked to a flavour which helps the function of that particular organ. These 5 flavours are: Sweet, Sour, Salty, Bitter and Pungent.
+    </string>
+    <string name="about2">
+        100% Natural spices with no preservatives or added colour. We deliver handpicked unpolished pulses and grains to you, our esteemed customer. We do our work with passion and work religiously to ensure only the best quality products.
+    </string>
+    <string name="about3">
+        Our unique blends tell their stories through their aromas and the depth of flavours that they add to your food. Our spices and blends bring soul into your every recipe.
+    </string>
+    <string name="about4">
+        We are committed to produce safe, hygienic and the highest quality products, with the assurance of 100% reliable delivery right at your doorstep.
+    </string>
+    <string name="about5">
+        We understand that it is important for you to buy the best products having the best quality at the best possible prices. We are able to provide the best quality product at best affordable prices.
+    </string>
+    <string name="about6">
+        Customer delight is our No. 1 priority. We are dedicated to providing the best possible purchase experience to you, and pride ourselves in swiftly responding to/resolving your queries with complete transparency. To know more, please feel free to get in touch with us in the following ways:
+    </string>
+    <string name="person_name">Person Name</string>
+
+</resources>

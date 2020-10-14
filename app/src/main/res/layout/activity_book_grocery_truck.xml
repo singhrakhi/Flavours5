@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.BookGroceryTruckActivity">
+
+    <ScrollView
+        android:id="@+id/layoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edTxtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edTxtContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edt_bg"
+                android:digits="1234567890"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="center_vertical"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edTxtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="start"
+                android:hint="Complete address with landmark *"
+                android:minHeight="@dimen/_80sdp"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/edTxtDeliveryDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="center_vertical"
+                android:hint="Select Delivery Date*"
+                android:importantForAutofill="no"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/edTxtDeliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="center_vertical"
+                android:hint="Select Time Slot*"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edTxtRequirment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="start"
+                android:hint="Submit your requirement with weight and qty*"
+                android:minHeight="@dimen/_80sdp"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtBookNow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/button_orange"
+                android:fontFamily="@font/ubuntu_r"
+                android:gravity="center"
+                android:text="Book Now"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

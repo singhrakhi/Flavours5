@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flavours5">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common.AnalyticsApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.TestActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".ui.home.OfferDetailsActivity" />
+        <activity android:name=".ui.account.ChangePasswordActivity" />
+        <activity android:name=".ui.checkout.OrderConfirmationActivity" />
+        <activity android:name=".ui.category.CategoryDetailsActivity" />
+        <activity android:name=".ui.prodcuts.ProdcutDetailsActivity" />
+        <activity android:name=".ui.order.OrderDetailsActivity" />
+        <activity android:name=".ui.order.MyOrderActivity" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.checkout.CheckOutActivity" />
+        <activity
+            android:name=".ui.address.AddAddressActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.address.MyAddressActivity" />
+        <activity android:name=".ui.cart.CartActivity" />
+        <activity android:name=".ui.home.AboutActivity" />
+        <activity android:name=".ui.home.SupportActivity" />
+        <activity
+            android:name=".ui.home.BookGroceryTruckActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.prodcuts.ProductsActivity" />
+        <activity
+            android:name=".ui.main.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.setup.SignupActivity" />
+        <activity android:name=".ui.setup.LoginActivity" />
+        <activity android:name=".ui.setup.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

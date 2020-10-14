@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select delivery type"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_r"
+        android:textColor="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/cart_item_left1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            style="@style/MyRadioButtonStyle"
+            android:backgroundTint="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/radioButtonDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card on delivery"
+                android:fontFamily="@font/ubuntu_l"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPick"
+                style="@style/MyRadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ubuntu_l"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="Cash on delivery"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11sdp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorGrey"
+        android:layout_marginBottom="@dimen/_3sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select delivery mode"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_r"
+        android:textColor="@color/colorBlack"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioDeliveryMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_weight="1"
+            style="@style/MyRadioButtonStyle"
+            android:backgroundTint="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/MyRadioButtonStyle"
+                android:id="@+id/radioTruckDeliveryMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grocery Truck Mode"
+                android:fontFamily="@font/ubuntu_l"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEcomm"
+                style="@style/MyRadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:padding="@dimen/_3sdp"
+                android:fontFamily="@font/ubuntu_l"
+                android:text="E-Commerce Mode"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11sdp" />
+
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorGrey"
+        android:layout_marginBottom="@dimen/_3sdp"/>
+
+    <TextView
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnewaddress"
+        android:text="Add New Address"
+        android:fontFamily="@font/ubuntu_r"
+        android:textSize="@dimen/_11sdp"
+        android:layout_gravity="right|end"
+        android:gravity="center"
+        android:background="@drawable/button_bg4"
+        android:textColor="@color/colorOrange"
+        android:layout_margin="@dimen/_3sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/linearlayout_delivery_address"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_item_right1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/ubuntu_l"
+                android:text="Select an Address"
+                android:textSize="@dimen/_11sdp"
+                android:gravity="left|start"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:id="@+id/activity_cart_txtAddress"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/colorGrey"
+                android:layout_marginBottom="@dimen/_3sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:hint="Select Delivery date"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="left|start"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:id="@+id/txtSelectDate" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/colorGrey"
+                android:layout_marginBottom="@dimen/_3sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:hint="Select Time slot"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="left|start"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:id="@+id/txtselectTime" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/colorGrey"
+                android:layout_marginBottom="@dimen/_3sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

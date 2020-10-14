@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_2sdp">
+
+   <LinearLayout
+       android:padding="@dimen/_8sdp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Order Id "
+               android:textSize="@dimen/_11sdp"
+               android:id="@+id/txtOrderId"
+               android:fontFamily="@font/ubuntu_l"
+               android:textColor="@color/colorOrange" />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Pending"
+               android:textSize="@dimen/_13sdp"
+               android:id="@+id/txtStatus"
+               android:fontFamily="@font/ubuntu_r"
+               android:gravity="right|center_vertical"
+               android:textColor="@color/colorAccent" />
+       </LinearLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="200"
+           android:fontFamily="@font/ubuntu_l"
+           android:id="@+id/txtPrice"
+           android:textSize="@dimen/_10sdp"
+           android:gravity="center_vertical"
+           android:textColor="@color/colorBlack" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Payment Type"
+           android:textSize="@dimen/_10sdp"
+           android:id="@+id/txtPayment"
+           android:fontFamily="@font/ubuntu_l"
+           android:gravity="center_vertical"
+           android:textColor="@color/colorBlack" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="28/5/2019"
+           android:id="@+id/txtOrderDate"
+           android:gravity="center_vertical"
+           android:textSize="@dimen/_10sdp"
+           android:fontFamily="@font/ubuntu_l"
+           android:textColor="@color/colorBlack" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="28/5/2019"
+           android:id="@+id/txtDate"
+           android:textSize="@dimen/_10sdp"
+           android:fontFamily="@font/ubuntu_l"
+           android:gravity="center_vertical"
+           android:textColor="@color/colorBlack" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="28/5/2019"
+               android:id="@+id/txtTime"
+               android:textSize="@dimen/_10sdp"
+               android:fontFamily="@font/ubuntu_l"
+               android:gravity="center_vertical"
+               android:textColor="@color/colorBlack" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="View Details"
+               android:id="@+id/txtViewDetails"
+               android:textSize="@dimen/_13sdp"
+               android:paddingLeft="@dimen/_8sdp"
+               android:paddingRight="@dimen/_8sdp"
+               android:fontFamily="@font/ubuntu_r"
+               android:paddingTop="@dimen/_5sdp"
+               android:paddingBottom="@dimen/_5sdp"
+               android:background="@drawable/button_orange"
+               android:gravity="center_vertical"
+               android:textColor="@color/colorWhite" />
+
+       </LinearLayout>
+
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

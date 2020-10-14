@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.address.AddAddressActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:hint="@string/person_name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="@dimen/_11sdp"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/edt_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:text="+91"
+                    android:textSize="@dimen/_11sdp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:paddingLeft="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/edt_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@null"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:hint="@string/phone_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="@dimen/_3sdp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBlack"
+                    tools:ignore="Autofill,HardcodedText"
+                    android:layout_marginLeft="@dimen/_5sdp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_address_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:hint="Delivery Address"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:maxLines="1"
+                android:minHeight="@dimen/_40sdp"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_pin_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:hint="PIN"
+                android:inputType="number"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:hint="City"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edLandMark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:hint="Landmark"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:background="@drawable/edt_bg"
+                android:layout_marginStart="@dimen/_4sdp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spineer_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:fontFamily="@font/ubuntu_l"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLocality"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:background="@drawable/edt_bg"
+                android:fontFamily="@font/ubuntu_l"
+                android:gravity="center_vertical"
+                android:hint="Locality"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="@dimen/_4sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make it default delivery address!" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_orange"
+                android:gravity="center"
+                android:text="ADD"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

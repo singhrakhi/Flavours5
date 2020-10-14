@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:labelVisibilityMode="labeled"
+    android:layout_margin="@dimen/_3sdp"
+    app:itemIconTint="@color/nav_item_state_list"
+    app:itemTextColor="@color/nav_item_state_list"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_home"
+            android:id="@+id/imgHome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:fontFamily="@font/ubuntu_r"
+            android:id="@+id/txtHome"
+            android:textColor="@color/colorLightGery"
+            android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/catLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_cate"
+            android:id="@+id/imgCat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textColor="@color/colorLightGery"
+            android:id="@+id/txtCat"
+            android:fontFamily="@font/ubuntu_r"
+            android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_order"
+            android:id="@+id/imgOrder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inbox"
+            android:textColor="@color/colorLightGery"
+            android:id="@+id/txtOrder"
+            android:fontFamily="@font/ubuntu_r"
+            android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_account"
+            android:id="@+id/imgAccount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textColor="@color/colorLightGery"
+            android:id="@+id/txtAccount"
+            android:fontFamily="@font/ubuntu_r"
+            android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
